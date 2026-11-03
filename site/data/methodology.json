@@ -1,0 +1,129 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-08-01",
+  "intro": {
+    "ru": "Terviona объединяет измерения, личный опыт, отзывы владельцев и независимые обзоры. Тир — это ориентир внутри конкретной категории, а не универсальная истина для любого человека и любого рынка.",
+    "en": "Terviona combines measurements, hands-on experience, owner feedback and independent reviews. A tier is guidance within a specific category, not a universal verdict for every person or market.",
+    "uk": "Terviona поєднує вимірювання, особистий досвід, відгуки власників і незалежні огляди. Тір — це орієнтир у межах конкретної категорії, а не універсальний висновок для кожної людини чи ринку."
+  },
+  "principles": [
+    {
+      "id": "context",
+      "title": {
+        "ru": "Контекст важнее места",
+        "en": "Context beats position",
+        "uk": "Контекст важливіший за місце"
+      },
+      "body": {
+        "ru": "Устройства внутри одного тира не образуют строгий рейтинг. Форма, посадка, сценарий использования и личные предпочтения могут быть важнее разницы между соседними позициями.",
+        "en": "Devices inside one tier are not strictly ranked. Shape, fit, use case and personal preference can matter more than the distance between neighbouring entries.",
+        "uk": "Пристрої всередині одного тіру не утворюють суворий рейтинг. Форма, посадка, сценарій використання та особисті вподобання можуть бути важливішими за різницю між сусідніми позиціями."
+      }
+    },
+    {
+      "id": "market",
+      "title": {
+        "ru": "Цена зависит от рынка",
+        "en": "Price depends on the market",
+        "uk": "Ціна залежить від ринку"
+      },
+      "body": {
+        "ru": "Цена, наличие, гарантия и доставка оцениваются для выбранного региона. Рекомендация для России, Беларуси, Украины или международного рынка может отличаться.",
+        "en": "Price, availability, warranty and shipping are evaluated for the selected region. A recommendation may differ between Russia, Belarus, Ukraine and the international market.",
+        "uk": "Ціна, наявність, гарантія та доставка оцінюються для вибраного регіону. Рекомендація для Росії, Білорусі, України чи міжнародного ринку може відрізнятися."
+      }
+    },
+    {
+      "id": "evidence",
+      "title": {
+        "ru": "Данные обновляются",
+        "en": "Evidence evolves",
+        "uk": "Дані оновлюються"
+      },
+      "body": {
+        "ru": "Прошивки, ревизии, измерения и доступность меняются. Мы обновляем оценки, когда появляется достаточно проверяемых данных, и отмечаем дату последней редакции.",
+        "en": "Firmware, revisions, measurements and availability change. Ratings are updated when enough verifiable evidence appears, with the latest revision date shown publicly.",
+        "uk": "Прошивки, ревізії, вимірювання та доступність змінюються. Ми оновлюємо оцінки, коли з’являється достатньо перевірених даних, і показуємо дату останньої редакції."
+      }
+    }
+  ],
+  "categories": {
+    "mice": {
+      "criteria": [
+        {
+          "value": "35%",
+          "ru": "Форма",
+          "en": "Shape",
+          "uk": "Форма"
+        },
+        {
+          "value": "20%",
+          "ru": "Цена",
+          "en": "Price",
+          "uk": "Ціна"
+        },
+        {
+          "value": "15%",
+          "ru": "Качество",
+          "en": "Quality",
+          "uk": "Якість"
+        },
+        {
+          "value": "10%",
+          "ru": "Начинка",
+          "en": "Internals",
+          "uk": "Начинка"
+        },
+        {
+          "value": "10%",
+          "ru": "Клики",
+          "en": "Clicks",
+          "uk": "Кліки"
+        },
+        {
+          "value": "10%",
+          "ru": "Вес",
+          "en": "Weight",
+          "uk": "Вага"
+        }
+      ],
+      "note": {
+        "ru": "Оценка внутри одного тира не задаёт строгий порядок — важен сам тир. Все мыши от A-тира и выше стоит рассматривать с учётом формы, хвата, размера ладони, локальной цены и личных предпочтений.",
+        "en": "Devices are not strictly ranked within the same tier—the tier itself is what matters. Every A-tier-or-higher mouse can be a valid choice depending on shape, grip, hand size, local price and personal preference.",
+        "uk": "Оцінка всередині одного тіру не задає суворого порядку — важливий сам тір. Усі миші від A-тіру й вище варто розглядати з огляду на форму, хват, розмір долоні, локальну ціну та власні вподобання."
+      }
+    },
+    "audio": {
+      "criteria": [],
+      "note": {
+        "ru": "Для максимально подходящего вам звучания рекомендуется эквализация. Более высокая цена не означает автоматически лучший звук: важны настройка, посадка, контроль качества и соответствие вашим предпочтениям. Для части моделей доступны пресеты под актуальные целевые кривые JM-1 и DF / Harman 2018.",
+        "en": "Equalization is recommended to get the best result for your preferences. A higher price does not automatically mean better sound: tuning, fit, quality control and personal preference matter. Selected models include presets for current JM-1 and DF / Harman 2018 targets.",
+        "uk": "Для найкращого звучання під ваші вподобання рекомендовано використовувати еквалізацію. Вища ціна не означає автоматично кращий звук: важливі налаштування, посадка, контроль якості та особисті вподобання. Для окремих моделей доступні пресети під актуальні цільові криві JM-1 і DF / Harman 2018."
+      },
+      "link": "https://eqpractice.pp.ua/en/the-easiest-way-to-eq-your-headphones/"
+    }
+  },
+  "sources": [
+    {
+      "label": {
+        "ru": "Измерения производителей и независимых лабораторий",
+        "en": "Manufacturer and independent laboratory measurements",
+        "uk": "Вимірювання виробників і незалежних лабораторій"
+      }
+    },
+    {
+      "label": {
+        "ru": "Длительное личное использование и сравнение",
+        "en": "Long-term hands-on use and comparisons",
+        "uk": "Тривале особисте використання та порівняння"
+      }
+    },
+    {
+      "label": {
+        "ru": "Проверяемые отзывы владельцев и профильные обзоры",
+        "en": "Verifiable owner feedback and specialist reviews",
+        "uk": "Перевірені відгуки власників і профільні огляди"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-labelledby="title desc">
+  <title id="title">Terviona Signal Gate</title>
+  <desc id="desc">Three measurement channels above a datum line, a violet signal, and a white V.</desc>
+  <g fill="#f4f4f5">
+    <rect x="50" y="16" width="28" height="80" rx="8"/>
+    <rect x="106" y="16" width="28" height="80" rx="8"/>
+    <rect x="162" y="16" width="28" height="80" rx="8"/>
+    <rect x="30" y="112" width="180" height="9" rx="4.5"/>
+  </g>
+  <path d="M66 146v13l54 89 54-89v-13" fill="none" stroke="#f4f4f5" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M108 145a7 7 0 0 1 7-7h10a7 7 0 0 1 7 7v34a13 13 0 0 1-2 7l-7 12a3.5 3.5 0 0 1-6 0l-7-12a13 13 0 0 1-2-7z" fill="#7457c8"/>
+</svg>

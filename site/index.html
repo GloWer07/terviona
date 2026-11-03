@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Terviona — база мышей и аудио</title>
+<meta name="description" content="Terviona — независимая база мышей и аудио. Характеристики, измерения, тиры и сравнения.">
+<!-- link preview (Telegram / Discord / VK / WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terviona">
+<meta property="og:title" content="Terviona — база мышей и аудио">
+<meta property="og:description" content="Terviona — независимая база мышей и аудио. Характеристики, измерения, тиры и сравнения.">
+<meta property="og:url" content="https://terviona.com/">
+<meta property="og:image" content="https://terviona.com/img/og.png?v=20260801">
+<meta property="og:image:secure_url" content="https://terviona.com/img/og.png?v=20260801">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Terviona — база мышей и аудио">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terviona — база мышей и аудио">
+<meta name="twitter:description" content="Terviona — независимая база мышей и аудио. Характеристики, измерения, тиры и сравнения.">
+<meta name="twitter:image" content="https://terviona.com/img/og.png?v=20260801">
+<meta name="twitter:image:alt" content="Terviona — база мышей и аудио">
+<link rel="icon" href="/favicon-48x48-v2.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/favicon-v2.svg" sizes="any" type="image/svg+xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=terviona4">
+</head>
+<body>
+<noscript><div><img src="https://mc.yandex.ru/watch/111136565" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<header class="nav" id="nav"></header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="hero_badge">Независимая база периферии</span></div>
+        <h1 data-i18n-aria="hero_heading"><span data-i18n="hero_h1b">Исследуй:</span><span class="hero-line grad hero-rotator" aria-hidden="true"><span class="hero-word" id="heroWord">Мыши.</span></span></h1>
+        <p class="sub" data-i18n="hero_sub">Независимая платформа исследований аудио и компьютерной периферии.</p>
+        <p class="hero-meta mono" data-i18n="hero_meta">Измерения • База данных • Сравнения • Исследования</p>
+      </div>
+
+      <aside class="hero-discovery" aria-label="Поиск по базе" data-i18n-aria="hero_search_label">
+        <div class="discovery-head">
+          <span class="discovery-label" data-i18n="hero_search_label">Поиск по базе</span>
+          <div class="lab-meta discovery-status" id="labMeta"></div>
+        </div>
+
+        <button class="search-trigger" data-spot-open aria-label="Поиск по базе" data-i18n-aria="hero_search_label">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3" stroke-linecap="round"/></svg>
+          <span class="st-txt" data-i18n="hero_search">Найти устройство…</span>
+        </button>
+
+        <div class="quick-head" data-i18n="hero_quick">Быстрый переход</div>
+        <nav class="quick-links" aria-label="Категории" data-i18n-aria="sec_cats">
+          <a href="/mice"><span class="quick-index mono">01</span><span data-i18n="nav_mice">Мыши</span><span aria-hidden="true">→</span></a>
+          <a href="/audio"><span class="quick-index mono">02</span><span data-i18n="nav_audio">Аудио</span><span aria-hidden="true">→</span></a>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="sec_cats">Категории</h2>
+      <span class="rule"></span>
+      <span class="sec-meta" data-i18n="sec_cats_idx">выбери раздел</span>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </section>
+
+  <section class="wrap home-journal-section">
+    <div class="sec-head home-journal-head">
+      <h2 id="homeJournalTitle">Журнал</h2>
+      <span class="rule"></span>
+      <a href="/articles" id="homeJournalAll">Все публикации →</a>
+    </div>
+    <p class="section-sub" id="homeJournalSubtitle">Разборы, гайды и обзоры от редакции Terviona.</p>
+    <div class="article-grid home-article-grid" id="homeArticleGrid" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<script src="js/i18n.js?v=20260801-perf1"></script>
+<script src="js/app.js?v=20260801-perf1"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/auth.js?v=20260730-routes1"></script>
+<script src="js/home-journal.js?v=20260801-journal1"></script>
+<script>
+function initHeroRotator(){
+  const el = document.getElementById('heroWord');
+  if (!el) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0;
+  let timer = 0;
+
+  const words = () => {
+    const localized = t('hero_words');
+    return Array.isArray(localized) && localized.length ? localized : ['Мыши.'];
+  };
+
+  const stop = () => {
+    window.clearTimeout(timer);
+    timer = 0;
+  };
+
+  const schedule = () => {
+    stop();
+    if (!reduceMotion.matches && !document.hidden && words().length > 1) {
+      timer = window.setTimeout(advance, 2600);
+    }
+  };
+
+  const reset = () => {
+    index = 0;
+    el.classList.remove('is-leaving', 'is-entering');
+    el.textContent = words()[0];
+    schedule();
+  };
+
+  function advance(){
+    el.classList.add('is-leaving');
+    window.setTimeout(() => {
+      const list = words();
+      index = (index + 1) % list.length;
+      el.textContent = list[index];
+      el.classList.remove('is-leaving');
+      el.classList.add('is-entering');
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.remove('is-entering')));
+      schedule();
+    }, 320);
+  }
+
+  document.addEventListener('visibilitychange', schedule);
+  reduceMotion.addEventListener?.('change', reset);
+  window.addEventListener('terviona:lang', reset);
+  reset();
+}
+
+(async function(){
+  await initGeoDefaults();
+  initTheme(); renderChrome('home'); applyStaticI18n(); wireGlobal();
+  initHeroRotator();
+  try { await loadCatalog(); } catch(e){ console.error(e); }
+
+  // stats (req #23 — replaced "замеры" with rating tiers)
+  const total = DB.index.length, brands = brandCount(), cats = Object.keys(CATEGORIES).length;
+  document.getElementById('stats').innerHTML = [
+    [total, t('stat_devices')],
+    [brands, t('stat_brands')],
+    [cats, t('stat_cats')],
+    [TIERS.length, t('stat_tiers')],
+  ].map(([v,l],i) => `<div class="stat reveal" style="--rd:${i*60}ms"><div class="v num">${v}</div><div class="l">${l}</div></div>`).join('');
+
+  // lab meta line under the search — only the freshness stamp
+  const ago = labAgo();
+  document.getElementById('labMeta').innerHTML =
+    ago ? `<span class="lm num">${ago}</span>` : '';
+
+  // category card w/ tier-distribution bars that grow up (req #26/#27)
+  function card(key, i){
+    const c = CATEGORIES[key];
+    const d = DB.data[key];
+    const count = d && d.items ? d.items.length : 0;
+    const dist = tierDist(key);
+    const order = tierList(key);
+    const totalC = order.reduce((a,tr)=>a+(dist[tr]||0),0) || 1;
+    const max = Math.max(1, ...order.map(tr => dist[tr]||0));
+    const bars = order.map(tr => {
+      const n = dist[tr]||0;
+      const pct = Math.round((n/totalC)*100);
+      const h = Math.round((n/max)*100); // tallest tier fills the track — differences stay visible
+      return `<div class="dist-col" title="${tr}: ${n} (${pct}%)">
+        <div class="dist-track"><div class="dist-bar" style="height:${Math.max(4,h)}%;background:var(--t-${tr.toLowerCase()})"></div></div>
+        <div class="dist-tier">${tr}</div>
+      </div>`;
+    }).join('');
+    return `<a class="cat-card reveal" href="${categoryPath(key)}" style="--rd:${i*40}ms">
+      <div class="cc-top"><div class="cc-ico">${ICO[c.icon]}</div><span class="cc-count num">${String(count).padStart(2,'0')}</span></div>
+      <h3>${catLabel(key)}</h3>
+      <p>${catShort(key)}</p>
+      <div class="dist">
+        <div class="dist-bars">${bars}</div>
+      </div>
+    </a>`;
+  }
+
+  const gridCats = [...GROUPS.peripherals.cats, ...GROUPS.audio.cats];
+  const futureCards = COMING_SOON_CATEGORIES.map((item,i)=>`<div class="cat-card builder-card future-card reveal" style="--rd:${(gridCats.length+i)*40}ms" aria-disabled="true" role="status">
+      <span class="builder-ribbon">${t('soon_badge')}</span>
+      <div class="cc-top"><div class="cc-ico">${ICO[item.icon]}</div></div>
+      <h3>${escapeHTML(comingSoonLabel(item))}</h3>
+      <p>${t(item.shortKey)}</p>
+    </div>`).join('');
+  const builderCard = `<div class="cat-card builder-card setup-builder-card reveal" style="--rd:${(gridCats.length+COMING_SOON_CATEGORIES.length)*40}ms" aria-disabled="true" role="status">
+      <span class="builder-ribbon">${t('soon_badge')}</span>
+      <div class="cc-top"><div class="cc-ico">${ICO.cart}</div></div>
+      <h3>${t('nav_builder')}</h3>
+      <p>${t('builder_soon')}</p>
+    </div>`;
+
+  document.getElementById('catGrid').innerHTML =
+    gridCats.map((k,i)=>card(k,i)).join('') + futureCards + builderCard;
+
+  initReveal();
+
+  // smooth count-up for hero stat numbers, started when the block scrolls into view
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const countUp = el => {
+      const target = +el.textContent;
+      if (!isFinite(target) || target <= 0) return;
+      el.textContent = '0';
+      const t0 = performance.now(), dur = 900;
+      const step = now => {
+        const p = Math.min(1, (now - t0) / dur);
+        const e = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * e);
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { countUp(e.target); io.unobserve(e.target); }
+    }), {threshold: .3});
+    document.querySelectorAll('#stats .v').forEach(el => io.observe(el));
+  }
+
+  window.PAGE_RENDER = function(){ location.reload(); };
+})();
+</script>
+</body>
+</html>

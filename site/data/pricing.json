@@ -1,0 +1,17 @@
+{
+ "base": "RUB",
+ "updated_at": "2026-07-28T18:19:44+00:00",
+ "rates_rub_per_unit": {
+  "RUB": 1.0,
+  "BYN": 29.0,
+  "UAH": 2.15,
+  "USD": 87.0,
+  "EUR": 102.0
+ },
+ "regions": {
+  "ru": "RUB",
+  "by": "BYN",
+  "ua": "UAH",
+  "int": "USD"
+ }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Журнал — Terviona</title>
+<meta name="description" content="Разборы, гайды и обзоры Terviona об аудио и компьютерной периферии.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terviona">
+<meta property="og:title" content="Журнал — Terviona">
+<meta property="og:description" content="Разборы, гайды и обзоры об аудио и компьютерной периферии.">
+<meta property="og:url" content="https://terviona.com/articles">
+<meta property="og:image" content="https://terviona.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://terviona.com/articles">
+<link rel="icon" href="/favicon-48x48-v2.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/favicon-v2.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20260801-journal1">
+</head>
+<body>
+<header class="nav" id="nav"></header>
+<main class="journal-page">
+  <section class="wrap journal-hero">
+    <div class="journal-hero-copy">
+      <span class="journal-kicker mono" id="journalKicker">TERVIONA // JOURNAL</span>
+      <h1 id="journalTitle">Статьи и обзоры</h1>
+      <p id="journalSubtitle">Разбираем технологии, проверяем утверждения и объясняем, как выбирать устройства осознанно.</p>
+    </div>
+    <div class="journal-signal" aria-hidden="true">
+      <span>ANALYSIS</span><i></i><span>GUIDES</span><i></i><span>REVIEWS</span>
+    </div>
+  </section>
+
+  <section class="wrap journal-controls" aria-label="Фильтры публикаций">
+    <div class="journal-filters" id="journalFilters"></div>
+    <label class="journal-sort">
+      <span class="sr-only" id="journalSortLabel">Сортировка</span>
+      <select id="journalSort"></select>
+    </label>
+  </section>
+
+  <section class="wrap journal-results" aria-live="polite">
+    <div class="journal-count mono" id="journalCount"></div>
+    <div class="article-grid" id="articleGrid">
+      <div class="article-loading"><span></span>Загрузка публикаций…</div>
+    </div>
+  </section>
+</main>
+<footer class="footer" id="footer"></footer>
+
+<script src="js/i18n.js?v=20260801-journal1"></script>
+<script src="js/app.js?v=20260801-journal1"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/auth.js?v=20260801-journal1"></script>
+<script src="js/articles.js?v=20260801-journal1"></script>
+</body>
+</html>

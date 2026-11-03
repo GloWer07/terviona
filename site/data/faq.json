@@ -1,0 +1,182 @@
+{
+  "scope": {
+    "ru": "Terviona ориентируется на международный рынок. Тиры отражают качество самого устройства, а цены, наличие, налоги, гарантия и выгодность покупки могут отличаться по странам — всегда сверяйте предложение в своём регионе.",
+    "en": "Terviona is built for an international audience. Tiers describe the device itself, while price, availability, taxes, warranty and overall value may differ by country — always compare offers in your region.",
+    "uk": "Terviona орієнтується на міжнародний ринок. Тіри описують сам пристрій, а ціни, наявність, податки, гарантія та вигідність покупки можуть відрізнятися залежно від країни — завжди порівнюйте пропозиції у своєму регіоні."
+  },
+  "questions": [
+    {
+      "n": "1",
+      "q": "Почему в листе нет *Название девайса*?",
+      "q_en": "Why isn't *Device name* on the list?",
+      "q_uk": "Чому в списку немає *Назви девайса*?",
+      "a": "Отсутствие модели не означает, что она плохая. Мы могли ещё не протестировать её, не найти достаточно надёжных данных или не успеть добавить после обновления. База расширяется постепенно; прислать модель на рассмотрение можно через форму ниже.",
+      "a_en": "A missing model is not automatically a bad model. We may not have tested it yet, found enough reliable evidence, or added it after a recent release. The database grows gradually; you can submit a model for review through the form below.",
+      "a_uk": "Відсутність моделі не означає, що вона погана. Ми могли ще не протестувати її, не знайти достатньо надійних даних або не встигнути додати після оновлення. База розширюється поступово; запропонувати модель на розгляд можна через форму нижче.",
+      "url": ""
+    },
+    {
+      "n": "2",
+      "q": "Но ведь чат ГПТ сказал что Gateron Jade Pro/X девайс намного лучше",
+      "q_en": "But ChatGPT said Gateron Jade Pro / device X is much better",
+      "q_uk": "Але ж ChatGPT сказав, що Gateron Jade Pro / девайс X набагато кращий",
+      "a": "Ответ языковой модели не является измерением или обзором: она может смешивать поколения устройств, пересказывать маркетинг и уверенно ошибаться. Для сравнения смотрите на проверяемые характеристики, независимые тесты, дату данных и условия использования. Подробнее — в материале по ссылке.",
+      "a_en": "A language-model answer is not a measurement or a review: it can mix product generations, repeat marketing and sound confident while being wrong. Compare verifiable specifications, independent tests, the date of the evidence and your use case instead. The linked article explains why.",
+      "a_uk": "Відповідь мовної моделі не є вимірюванням чи оглядом: вона може змішувати покоління пристроїв, повторювати маркетинг і впевнено помилятися. Для порівняння дивіться на перевірювані характеристики, незалежні тести, дату даних та умови використання. Детальніше — у матеріалі за посиланням.",
+      "url": "https://stopcitingai.com/"
+    },
+    {
+      "n": "5",
+      "q": "Почему в листе с мышками почти не учитывается их начинка?",
+      "q_en": "Why does the mouse list barely account for internal hardware?",
+      "q_uk": "Чому в списку мишей майже не враховується їхня начинка?",
+      "a": "Начинка учитывается, но у большинства современных мышей сенсор и беспроводное соединение уже достаточно хороши для обычного и соревновательного использования. Реальная реализация, стабильность, клики и QC важнее одного названия сенсора или контроллера.",
+      "a_en": "Internal hardware is considered, but most modern mice already have sensors and wireless performance good enough for everyday and competitive play. Actual implementation, stability, clicks and QC matter more than the name of a sensor or controller alone.",
+      "a_uk": "Начинка враховується, але в більшості сучасних мишей сенсор і бездротове з'єднання вже достатньо добрі для звичайного та змагального використання. Реалізація, стабільність, кліки й QC важливіші за саму назву сенсора чи контролера.",
+      "url": ""
+    },
+    {
+      "n": "6",
+      "q": "Почему форма мышки стоит намного выше всех остальных критериев?",
+      "q_en": "Why is mouse shape weighted much higher than the other criteria?",
+      "q_uk": "Чому форма миші має набагато більшу вагу за інші критерії?",
+      "a": "Форма напрямую влияет на комфорт и контроль, а размер ладони, длина пальцев и хват у всех разные. Отличные характеристики не компенсируют корпус, который вызывает напряжение или мешает уверенно держать мышь, поэтому форму нельзя оценивать только по цифрам.",
+      "a_en": "Shape directly affects comfort and control, while hand size, finger length and grip differ from person to person. Great specifications cannot compensate for a shell that causes strain or feels insecure, so shape cannot be judged by numbers alone.",
+      "a_uk": "Форма безпосередньо впливає на комфорт і контроль, а розмір долоні, довжина пальців і хват у всіх різні. Відмінні характеристики не компенсують корпус, який спричиняє напруження чи заважає впевнено тримати мишу, тому форму не можна оцінити лише цифрами.",
+      "url": "https://docs.google.com/document/d/1f_PZKEDRHg1LCYIY9s9QuMI_A3BX2G8H8j-Iws8xrBA/edit?usp=sharing"
+    },
+    {
+      "n": "7",
+      "q": "Как понять, что та или иная мышь подойдёт именно под меня?",
+      "q_en": "How do I know whether a particular mouse will suit me?",
+      "q_uk": "Як зрозуміти, що та чи інша миша підійде саме мені?",
+      "a": "Лучший способ — попробовать мышь лично в доступном вам магазине, шоуруме или у знакомых. Если это невозможно, измерьте ладонь, учтите хват и сравните контуры с привычной моделью на EloShapes. Относитесь к рекомендациям как к отправной точке, а не гарантии посадки.",
+      "a_en": "The best option is to try the mouse in a local store, showroom or through a friend. If that is not possible, measure your hand, consider your grip and compare the outline with a familiar model on EloShapes. Treat recommendations as a starting point, not a guarantee of fit.",
+      "a_uk": "Найкраще спробувати мишу особисто в доступному магазині, шоурумі або у знайомих. Якщо це неможливо, виміряйте долоню, врахуйте хват і порівняйте контури зі звичною моделлю на EloShapes. Сприймайте рекомендації як відправну точку, а не гарантію посадки.",
+      "url": "https://www.eloshapes.com/mouse/compare"
+    },
+    {
+      "n": "8",
+      "q": "У моего девайса низкая оценка в вашем листе. Мне покупать что-то лучше?",
+      "q_en": "My device has a low rating in your list. Should I buy something better?",
+      "q_uk": "Мій пристрій має низьку оцінку у вашому списку. Чи варто купувати щось краще?",
+      "a": "Если устройство вас полностью устраивает, менять его только из-за тира не нужно. Обновление имеет смысл, когда есть конкретная проблема или функция, которой вам не хватает. Перед покупкой сравните ожидаемое улучшение с местной ценой, гарантией и доступностью.",
+      "a_en": "If you are completely happy with your device, there is no need to replace it just because of its tier. Upgrade when you have a specific problem or need a feature you are missing. Compare the expected improvement with local price, warranty and availability before buying.",
+      "a_uk": "Якщо пристрій вас повністю влаштовує, змінювати його лише через тір не потрібно. Оновлення має сенс, коли є конкретна проблема або потрібна функція, якої бракує. Перед покупкою порівняйте очікуване покращення з місцевою ціною, гарантією та доступністю.",
+      "url": ""
+    },
+    {
+      "n": "9",
+      "q": "Что такое QC?",
+      "q_en": "What is QC?",
+      "q_uk": "Що таке QC?",
+      "a": "QC — Quality Control, то есть контроль качества. В листе этот термин описывает стабильность качества между экземплярами: люфты, скрипы, дефекты сборки, работу кнопок, электроники и другие проблемы конкретных партий.",
+      "a_en": "QC means Quality Control. In the list, it describes consistency between individual units: wobble, creaking, assembly defects, buttons, electronics and other batch-related problems.",
+      "a_uk": "QC — Quality Control, тобто контроль якості. У списку цей термін описує стабільність якості між окремими екземплярами: люфти, скрипи, дефекти складання, роботу кнопок, електроніки та інші проблеми партій.",
+      "url": ""
+    }
+  ],
+  "sources": [
+    {
+      "name": "Rakka DB",
+      "url": "https://rakka.dev/docs"
+    },
+    {
+      "name": "Daudas",
+      "url": "https://www.youtube.com/@DaudasVlr"
+    },
+    {
+      "name": "EloShapes",
+      "url": "https://www.eloshapes.com/mouse/compare"
+    },
+    {
+      "name": "The Review Repository",
+      "url": "https://www.youtube.com/@TRR_TheReviewRepository"
+    },
+    {
+      "name": "SayoDevice Discord",
+      "url": "https://discord.gg/3FGcfuFgHD"
+    },
+    {
+      "name": "Wooting switch database",
+      "url": "https://library.wooting.io/225eb39179848072869fdddc3b9ae808?v=225eb39179848012bc64000c9fe9d9c8"
+    },
+    {
+      "name": "Ponnie",
+      "url": "https://www.youtube.com/@ponniereview"
+    },
+    {
+      "name": "Гайд на откат Mchose",
+      "name_en": "Mchose rollback guide",
+      "name_uk": "Гайд із відкату Mchose",
+      "url": "https://docs.google.com/document/d/1FBHhXwzbUSZ8WJSCOYDVVFrNUGDz8mhgKlmVrfPdivs/edit?tab=t.0"
+    },
+    {
+      "name": "Прошивка Sayo",
+      "name_en": "Sayo firmware",
+      "name_uk": "Прошивка Sayo",
+      "url": "https://docs.qq.com/doc/DYkpFY0pXSGZTS2JZ"
+    },
+    {
+      "name": "DPQP",
+      "url": "https://dpqp.jp/"
+    },
+    {
+      "name": "Главный гайд по эквализации",
+      "name_en": "Main equalization guide",
+      "name_uk": "Головний гайд з еквалізації",
+      "url": "https://eqpractice.pp.ua/en/the-easiest-way-to-eq-your-headphones/"
+    },
+    {
+      "name": "Важность формы в мышках — GloWer",
+      "name_en": "Why mouse shape matters — GloWer",
+      "name_uk": "Важливість форми миші — GloWer",
+      "url": "https://docs.google.com/document/d/1f_PZKEDRHg1LCYIY9s9QuMI_A3BX2G8H8j-Iws8xrBA/edit?usp=sharing"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Chelovek43",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    },
+    {
+      "name": "Rosewood",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    },
+    {
+      "name": "Lander",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    },
+    {
+      "name": "Saide",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    },
+    {
+      "name": "GloWer",
+      "role": "Основатель проекта",
+      "role_en": "Project founder",
+      "role_uk": "Засновник проєкту"
+    },
+    {
+      "name": "Hanahaki",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    },
+    {
+      "name": "SAYO RU Community",
+      "role": "Редактор базы",
+      "role_en": "Database editor",
+      "role_uk": "Редактор бази"
+    }
+  ],
+  "ask_url": "https://forms.gle/r4Ai8FzVa7rAWKWb6"
+}

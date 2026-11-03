@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>FAQ — Terviona</title>
+<meta name="description" content="FAQ Terviona: методология тир-листов, выбор устройств и региональные различия.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terviona">
+<meta property="og:title" content="FAQ — Terviona">
+<meta property="og:description" content="Методология тир-листов, выбор устройств и региональные различия.">
+<meta property="og:url" content="https://terviona.com/faq.html">
+<meta property="og:image" content="https://terviona.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://terviona.com/img/og.png">
+<link rel="icon" href="/favicon-48x48-v2.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/favicon-v2.svg" sizes="any" type="image/svg+xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=terviona4">
+</head>
+<body>
+<noscript><div><img src="https://mc.yandex.ru/watch/111136565" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<header class="nav" id="nav"></header>
+
+<main>
+  <section class="wrap faq-intro">
+    <div class="faq-intro-head">
+      <h1 data-i18n="faq_title">Частые вопросы</h1>
+      <p data-i18n="faq_sub"></p>
+    </div>
+    <div class="faq-about-panel">
+      <h2 data-i18n="about_title">Что такое Terviona</h2>
+      <p data-i18n="about_text"></p>
+    </div>
+  </section>
+
+  <section class="wrap faq-scope-wrap"><div class="faq-scope" id="faqScope"></div></section>
+  <section class="wrap faq-questions"><div class="faq-list" id="faqList"></div></section>
+
+  <section class="wrap faq-meta-section">
+    <div class="sec-head"><h2 style="font-size:18px" data-i18n="faq_legend">Система тиров</h2><span class="rule"></span></div>
+    <div class="info-cards" id="infoCards"></div>
+  </section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<script src="js/i18n.js?v=20260801-perf1"></script>
+<script src="js/app.js?v=20260801-perf1"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/auth.js?v=20260730-routes1"></script>
+<script>
+const TIER_MEAN = {
+  ru:{SS:"Абсолютный топ, эталон категории",S:"Отличный выбор без компромиссов",A:"Очень хорошо, лёгкие нюансы",B:"Хорошо за свои деньги",C:"Средне, есть заметные компромиссы",D:"Слабо, чаще не стоит внимания",F:"Плохо, брать не рекомендуется"},
+  en:{SS:"Absolute top, category benchmark",S:"Excellent, no real compromises",A:"Very good, minor nuances",B:"Good value for the money",C:"Average, noticeable compromises",D:"Weak, usually not worth it",F:"Bad, not recommended"},
+  uk:{SS:"Абсолютний топ, еталон категорії",S:"Відмінний вибір без компромісів",A:"Дуже добре, легкі нюанси",B:"Добре за свої гроші",C:"Середньо, є помітні компроміси",D:"Слабко, частіше не варте уваги",F:"Погано, брати не рекомендується"},
+};
+
+(async function(){
+  await initGeoDefaults();
+  initTheme(); renderChrome('faq'); applyStaticI18n(); wireGlobal();
+  await loadFAQ().catch(()=>{});
+  render();
+  window.PAGE_RENDER = render;
+
+  function render(){
+    applyStaticI18n();
+    const faq = DB.data.faq || {questions:[],sources:[],authors:[]};
+    const scope = localizedValue(faq.scope);
+    document.getElementById('faqScope').innerHTML = `
+      <div class="faq-scope-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5S14.4 18.1 12 20.5C9.6 18.1 8.5 15.3 8.5 12S9.6 5.9 12 3.5Z"/></svg></div>
+      <div><h2>${t('faq_scope_title')}</h2><p>${escapeHTML(scope)}</p></div>`;
+
+    document.getElementById('faqList').innerHTML = faq.questions.map((q,i) => {
+      const qId = `faq-q-${q.n}`;
+      const aId = `faq-a-${q.n}`;
+      const source = q.url ? `<a class="faq-source" href="${escapeHTML(q.url)}" target="_blank" rel="noopener noreferrer">${t('source')} ↗</a>` : '';
+      return `<div class="faq-item" style="--rd:${Math.min(i*45,450)}ms">
+        <button class="faq-q" id="${qId}" aria-expanded="false" aria-controls="${aId}">
+          <span class="qn num">${String(q.n).padStart(2,'0')}</span>
+          <span class="qt">${escapeHTML(localizedField(q,'q'))}</span>
+          <span class="qx" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a" id="${aId}" role="region" aria-labelledby="${qId}" aria-hidden="true"><div class="inner"><p>${escapeHTML(localizedField(q,'a'))}</p>${source}</div></div>
+      </div>`;
+    }).join('');
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const button = item.querySelector('.faq-q');
+      const answer = item.querySelector('.faq-a');
+      button.addEventListener('click', () => {
+        const open = item.classList.toggle('open');
+        button.setAttribute('aria-expanded', String(open));
+        answer.setAttribute('aria-hidden', String(!open));
+        answer.style.maxHeight = open ? answer.scrollHeight+'px' : '0';
+      });
+    });
+
+    const mean = TIER_MEAN[LANG] || TIER_MEAN.ru;
+    const legend = TIERS.map(tr => `<div class="tl-row"><span class="tl-badge t-${tr.toLowerCase()}">${tr}</span><span>${mean[tr]}</span></div>`).join('');
+    const sources = faq.sources.map(s => {
+      const name = localizedField(s,'name');
+      return `<li>${s.url?`<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(name)} ↗</a>`:`<span>${escapeHTML(name)}</span>`}</li>`;
+    }).join('');
+    const authors = faq.authors.map(a => `<li><span>${escapeHTML(localizedField(a,'role'))} — ${escapeHTML(a.name)}</span></li>`).join('');
+    const askUrl = faq.ask_url || 'contact.html';
+    document.getElementById('infoCards').innerHTML = `
+      <div class="info-card" style="--rd:0ms"><h4>${t('faq_legend')}</h4><div class="tier-legend">${legend}</div></div>
+      <div class="info-card" style="--rd:60ms"><h4>${t('faq_sources')}</h4><ul>${sources}</ul></div>
+      <div class="info-card" style="--rd:120ms"><h4>${t('faq_authors')}</h4><ul>${authors}</ul></div>
+      <div class="info-card faq-ask-card" style="--rd:180ms"><h4>${t('faq_ask')}</h4><a class="faq-ask-link" href="${escapeHTML(askUrl)}" target="_blank" rel="noopener noreferrer">${t('faq_ask_cta')} ↗</a></div>`;
+  }
+})();
+</script>
+</body>
+</html>

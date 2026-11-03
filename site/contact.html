@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Контакты — Terviona</title>
+<!-- link preview (Telegram / Discord / VK / WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terviona">
+<meta property="og:title" content="Контакты — Terviona">
+<meta property="og:description" content="Мышки и аудио — собраны, измерены и разложены по единым тирам.">
+<meta property="og:url" content="https://terviona.com/contact.html">
+<meta property="og:image" content="https://terviona.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://terviona.com/img/og.png">
+<link rel="icon" href="/favicon-48x48-v2.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/favicon-v2.svg" sizes="any" type="image/svg+xml">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=terviona4">
+</head>
+<body>
+<noscript><div><img src="https://mc.yandex.ru/watch/111136565" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<header class="nav" id="nav"></header>
+
+<main>
+  <section class="wrap page-head">
+    <h1 data-i18n="contact_title">Контакты</h1>
+    <p data-i18n="contact_sub"></p>
+  </section>
+
+  <section class="wrap">
+    <div class="contact-grid" id="contactGrid"></div>
+  </section>
+
+  <section class="wrap social-section">
+    <div class="sec-head"><h2 style="font-size:18px" data-i18n="social_title">Terviona в соцсетях</h2><span class="rule"></span></div>
+    <p class="section-sub" data-i18n="social_sub"></p>
+    <div class="social-grid" id="socialGrid"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2 style="font-size:18px" data-i18n="friends_title">Наши друзья</h2><span class="rule"></span></div>
+    <div class="contact-grid" id="friendsGrid"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head"><h2 style="font-size:18px" data-i18n="soon_title">Скоро</h2><span class="rule"></span></div>
+    <div class="soon-grid" id="soonGrid"></div>
+  </section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<script src="js/i18n.js?v=20260801-perf1"></script>
+<script src="js/app.js?v=20260801-perf1"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/auth.js?v=20260730-routes1"></script>
+<script>
+/* Email contacts replace the old Google Forms flow (req #7).
+   Addresses are placeholders on the terviona.net domain — swap for
+   real inboxes once they exist. */
+const MAILS = [
+  { key:"contact_general",  mail:"hello@terviona.net" },
+  { key:"contact_support",  mail:"support@terviona.net" },
+  { key:"contact_partners", mail:"partners@terviona.net" },
+  { key:"contact_data",     mail:"db@terviona.net" },
+];
+/* future sections — stubs for now */
+const SOON = ["soon_news","soon_eq","soon_accounts"];
+/* friendly projects — telegram links */
+const FRIENDS = [
+  { name:"Key to Mars", url:"https://t.me/keytomars" },
+  { name:"LeoGearUp",   url:"https://t.me/LeoGearUp" },
+];
+
+(async function(){
+  await initGeoDefaults();
+  initTheme(); renderChrome('contact'); applyStaticI18n(); wireGlobal();
+  render(); window.PAGE_RENDER = render;
+
+  function render(){
+    applyStaticI18n();
+    document.getElementById('contactGrid').innerHTML = MAILS.map((m,i) => `
+      <div class="contact-card" style="--rd:${i*60}ms">
+        <h3>${t(m.key)}</h3>
+        <a class="mail" href="mailto:${m.mail}">${ICO.mail}<span>${m.mail}</span></a>
+      </div>`).join('');
+    document.getElementById('socialGrid').innerHTML = SOCIAL_LINKS.map((social,i) => `
+      <a class="social-card" href="${escapeHTML(social.url)}" target="_blank" rel="noopener noreferrer" style="--rd:${i*45}ms" aria-label="Terviona — ${escapeHTML(social.label)}">
+        <span class="social-card-icon">${SOCIAL_ICO[social.key]}</span>
+        <span><strong>${escapeHTML(social.label)}</strong><small>${escapeHTML(social.url.replace(/^https?:\/\//,'').split('?')[0])}</small></span>
+        <span class="social-card-arrow" aria-hidden="true">↗</span>
+      </a>`).join('');
+    document.getElementById('friendsGrid').innerHTML = FRIENDS.map((f,i) => `
+      <div class="contact-card" style="--rd:${i*60}ms">
+        <h3>${f.name}</h3>
+        <a class="mail" href="${f.url}" target="_blank" rel="noopener noreferrer">${SOCIAL_ICO.telegram}<span>${f.url.replace('https://','')}</span></a>
+      </div>`).join('');
+    document.getElementById('soonGrid').innerHTML = SOON.map((k,i) => `
+      <div class="soon-card" style="--rd:${i*60}ms">
+        <span class="soon-badge">${t('soon_badge')}</span>
+        <h3>${t(k)}</h3>
+      </div>`).join('');
+  }
+})();
+</script>
+</body>
+</html>

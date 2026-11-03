@@ -1,0 +1,70 @@
+{
+ "version": 1,
+ "updated_at": "2026-08-01T12:00:00Z",
+ "articles": [
+  {
+   "id": "reading-terviona-tier-lists",
+   "slug": "reading-terviona-tier-lists",
+   "status": "published",
+   "category": "guide",
+   "source_language": "ru",
+   "author": {"name":"Terviona","profile_id":null},
+   "published_at": "2026-08-01T12:00:00Z",
+   "updated_at": "2026-08-01T12:00:00Z",
+   "cover": {
+    "src": "img/articles/reading-tier-lists.svg",
+    "alt": {"ru":"Схема чтения тир-листов Terviona","en":"How to read Terviona tier lists diagram","uk":"Схема читання тір-листів Terviona"}
+   },
+   "translations": {
+    "ru": {
+     "title": "Как читать тир-листы Terviona",
+     "excerpt": "Почему место внутри тира не равно точному рейтингу и как учитывать форму, цену и регион.",
+     "seo_description": "Короткий гайд по системе оценок Terviona, региональным ценам и выбору устройств внутри одного тира.",
+     "blocks": [
+      {"type":"heading","level":2,"html":"Тир — это диапазон, а не пьедестал"},
+      {"type":"paragraph","html":"Устройства внутри одного тира считаются сопоставимыми по итоговой ценности. Их порядок на странице не означает, что первая модель всегда лучше последней: на решение влияют форма, посадка, сценарий использования и цена в вашем регионе."},
+      {"type":"callout","tone":"signal","title":"Главный принцип","html":"Сначала выберите подходящий вам класс устройств, затем сравнивайте модели внутри него по личным ограничениям."},
+      {"type":"heading","level":2,"html":"Цена меняет контекст"},
+      {"type":"paragraph","html":"Одна и та же модель может быть удачной покупкой на международном рынке и слабой — там, где её цена заметно выше или отсутствует нормальная гарантия. Поэтому Terviona показывает региональные источники и не сводит рекомендации только к рынку РФ."},
+      {"type":"list","ordered":false,"items":["Проверьте актуальную цену и наличие.","Сопоставьте характеристики со своим сценарием.","Откройте полное описание и изучите оговорки.","Используйте тир как фильтр, а не как окончательный ответ."]},
+      {"type":"quote","html":"Хорошая рекомендация сокращает выбор, но не подменяет ваши предпочтения.","cite":"Редакция Terviona"},
+      {"type":"heading","level":2,"html":"Методология доступна отдельно"},
+      {"type":"paragraph","html":"Все критерии, веса и дисклеймеры собраны на единой странице методологии. Категории устройств используют тот же источник данных, поэтому формулировки и проценты не расходятся."}
+     ]
+    },
+    "en": {
+     "title": "How to read Terviona tier lists",
+     "excerpt": "Why placement inside a tier is not a precise ranking, and how shape, price and region affect the result.",
+     "seo_description": "A short guide to Terviona ratings, regional pricing and choosing devices within the same tier.",
+     "blocks": [
+      {"type":"heading","level":2,"html":"A tier is a range, not a podium"},
+      {"type":"paragraph","html":"Devices inside the same tier are considered comparable in overall value. Their order on the page does not mean the first model is always better than the last: shape, fit, use case and local price all affect the decision."},
+      {"type":"callout","tone":"signal","title":"Core principle","html":"Choose the right class of device first, then compare models inside it using your own constraints."},
+      {"type":"heading","level":2,"html":"Price changes the context"},
+      {"type":"paragraph","html":"The same model can be a strong buy internationally and a weak one where its price is inflated or warranty support is poor. Terviona therefore shows regional sources instead of treating the Russian market as the only reference."},
+      {"type":"list","ordered":false,"items":["Check the current price and availability.","Match the specifications to your use case.","Open the full description and read its caveats.","Use the tier as a filter, not a final answer."]},
+      {"type":"quote","html":"A good recommendation narrows the choice without replacing your preferences.","cite":"Terviona editorial team"},
+      {"type":"heading","level":2,"html":"The methodology lives in one place"},
+      {"type":"paragraph","html":"All criteria, weights and disclaimers are collected on one methodology page. Device categories read from the same data source, keeping percentages and wording consistent."}
+     ]
+    },
+    "uk": {
+     "title": "Як читати тір-листи Terviona",
+     "excerpt": "Чому місце всередині тіру не є точним рейтингом і як враховувати форму, ціну та регіон.",
+     "seo_description": "Короткий гайд про систему оцінок Terviona, регіональні ціни та вибір пристроїв усередині одного тіру.",
+     "blocks": [
+      {"type":"heading","level":2,"html":"Тір — це діапазон, а не п’єдестал"},
+      {"type":"paragraph","html":"Пристрої всередині одного тіру вважаються зіставними за підсумковою цінністю. Їхній порядок на сторінці не означає, що перша модель завжди краща за останню: на вибір впливають форма, посадка, сценарій використання та ціна у вашому регіоні."},
+      {"type":"callout","tone":"signal","title":"Головний принцип","html":"Спочатку виберіть відповідний клас пристроїв, а потім порівнюйте моделі всередині нього за власними обмеженнями."},
+      {"type":"heading","level":2,"html":"Ціна змінює контекст"},
+      {"type":"paragraph","html":"Одна й та сама модель може бути вдалою покупкою на міжнародному ринку та слабкою там, де її ціна значно вища або немає нормальної гарантії. Тому Terviona показує регіональні джерела й не зводить рекомендації лише до ринку РФ."},
+      {"type":"list","ordered":false,"items":["Перевірте актуальну ціну та наявність.","Зіставте характеристики зі своїм сценарієм.","Відкрийте повний опис і прочитайте застереження.","Використовуйте тір як фільтр, а не остаточну відповідь."]},
+      {"type":"quote","html":"Хороша рекомендація скорочує вибір, але не підміняє ваші вподобання.","cite":"Редакція Terviona"},
+      {"type":"heading","level":2,"html":"Методологія доступна окремо"},
+      {"type":"paragraph","html":"Усі критерії, ваги та дисклеймери зібрані на єдиній сторінці методології. Категорії пристроїв використовують те саме джерело даних, тому формулювання та відсотки не розходяться."}
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 100" role="img" aria-labelledby="title">
+  <title id="title">TERVIONA</title>
+  <g fill="none" stroke="#f4f4f5" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 16h62M41 16v68"/>
+    <path d="M112 16v68M112 16h58M112 50h48M112 84h58"/>
+    <path d="M202 84V16h43c14 0 23 7 23 18s-9 18-23 18h-43M244 52l28 32"/>
+    <path d="M306 16l34 68 34-68"/>
+    <path d="M420 16v68"/>
+    <rect x="480" y="16" width="70" height="68" rx="20"/>
+    <path d="M584 84V16l70 68V16"/>
+    <path d="M694 84l34-68 34 68"/>
+  </g>
+</svg>

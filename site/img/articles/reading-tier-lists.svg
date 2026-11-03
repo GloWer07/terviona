@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+ <title id="title">Terviona methodology signal</title>
+ <desc id="desc">Technical diagram with tier bands and a violet signal curve.</desc>
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080a10"/><stop offset="1" stop-color="#11131b"/></linearGradient>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9b8bd4"/><stop offset="1" stop-color="#6547b3"/></linearGradient>
+  <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+ <rect width="1600" height="900" rx="32" fill="url(#bg)"/>
+ <rect width="1600" height="900" rx="32" fill="url(#grid)"/>
+ <path d="M64 92H1536" stroke="#fff" stroke-opacity=".12"/>
+ <g fill="#9b8bd4" font-family="JetBrains Mono,monospace" font-size="24" letter-spacing="4"><text x="72" y="62">TERVIONA // METHODOLOGY</text><text x="1380" y="62">01.08.26</text></g>
+ <g transform="translate(78 176)">
+  <text fill="#f4f3f8" font-family="Inter,Arial,sans-serif" font-size="92" font-weight="700"><tspan x="0" y="0">READ THE</tspan><tspan x="0" y="104">SIGNAL</tspan></text>
+  <text x="4" y="266" fill="#aaa8b4" font-family="JetBrains Mono,monospace" font-size="24" letter-spacing="2">TIER ≠ EXACT POSITION</text>
+ </g>
+ <g transform="translate(760 182)">
+  <path d="M0 520H760M0 390H760M0 260H760M0 130H760M0 0H760" stroke="#fff" stroke-opacity=".09"/>
+  <g fill="#aaa8b4" font-family="JetBrains Mono,monospace" font-size="19"><text x="18" y="-18">VALUE / CONTEXT</text><text x="705" y="550">MARKET</text></g>
+  <path d="M12 472C110 458 154 362 244 380S380 264 474 286s122-174 274-220" fill="none" stroke="url(#signal)" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M12 472C110 458 154 362 244 380S380 264 474 286s122-174 274-220V520H12Z" fill="url(#signal)" opacity=".1"/>
+  <g fill="#f4f3f8" stroke="#7457c8" stroke-width="5"><circle cx="12" cy="472" r="12"/><circle cx="244" cy="380" r="12"/><circle cx="474" cy="286" r="12"/><circle cx="748" cy="66" r="12"/></g>
+ </g>
+ <g transform="translate(80 774)" font-family="JetBrains Mono,monospace">
+  <rect width="1440" height="62" rx="12" fill="#7457c8" fill-opacity=".13" stroke="#7457c8" stroke-opacity=".55"/>
+  <text x="28" y="40" fill="#c8bff0" font-size="22" letter-spacing="2">SHAPE · FIT · REGION · EVIDENCE · PREFERENCE</text>
+  <text x="1325" y="40" fill="#f4f3f8" font-size="22">03</text>
+ </g>
+</svg>
